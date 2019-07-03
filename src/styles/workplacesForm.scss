@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.workplaces-form {
+  background: #f9f9f9;
+  padding: 25px;
+  margin: 100px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+  input[type='submit'] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: $green;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  input[type='submit']:hover {
+    opacity: 0.9;
+  }
+
+  input[type='submit']:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+  .personal-data-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .workplaces-header {
+    position: relative;
+  }
+
+  .workplaces-header button {
+    background-color: grey;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    cursor: pointer;
+    border: none;
+    padding: 3px;
+  }
+
+  .workplaces-header button:disabled {
+    background-color: lightgray;
+    color: black;
+  }
+
+  h2.header {
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+}
